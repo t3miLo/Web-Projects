@@ -3,11 +3,9 @@ const hundredInput = document.querySelector("#hundred");
 const totalHundreds = document.querySelector("#totalHundreds");
 let tHundreds = 0;
 
-
 const fiftiesInput = document.querySelector("#fifties");
 const totalFifties = document.querySelector("#bill50 > output");
 let tFifties = 0;
-
 
 const dubsInput = document.querySelector("#dubs");
 const totalDubs = document.querySelector("#bill20 > output");
@@ -46,13 +44,15 @@ const totalCash = document.querySelector("#total > output");
 const resetButton = document.querySelector("#reset")
 // const reset = document.querySelector("#counters > input");
 
+/** array that is used to calculate total sum of all bills **/
 let tCash = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-
+/** function to reduce above array into a total sum**/
 function getSum(a, b ){
   return a + b;
 };
 
+/** Reset function to clear all slots **/
 function resetAll(){
   var elements = document.getElementsByTagName("input");
   var outz = document.getElementsByTagName("output")
@@ -68,28 +68,31 @@ function resetAll(){
   }
 }
 
+/** function to make box red incase user inputs something other than a number **/
 function red(bill, output, box){
   if (bill.match(/\D/gi)) {
     let setBox = document.getElementById(box);
     setBox.style.background = "red";
-    output.value = "$0.00";
+    output.value = "ERROR";
     output.style.color = "red";
-    setBox.setCustomValidity("I expect an e-mail, darling!");
+    // setBox.setCustomValidity("I expect an e-mail, darling!");
     // setTimeout(function(){ alert("Please Enter Only Numbers."); }, 500);
 
   }else {
     document.getElementById(box).style.background = "blue";
     output.style.color = "black";
   }
-
 }
 
 function cHundred(){
     const hundreds = hundredInput.value;
     const tHundreds = hundreds * 100;
+    /**format to display out in US currency **/
     let format = tHundreds.toLocaleString('en-ENG', { style: 'currency', currency: 'USD' });
-    totalHundreds.innerHTML = format;
+    totalHundreds.value = format;
+    /** change array to reflect what the user inputs in input slot **/
     tCash.splice(0, 1, tHundreds);
+    /** calculates new total amount everytime user inputs a number **/
     let toCash = tCash.reduce(getSum);
     let tFormat = toCash.toLocaleString("en-ENG", {style: "currency", currency: "USD"});
     totalCash.value = tFormat;
