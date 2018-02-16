@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cash In</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div>
+      <div id="container">
+        <div id="title">
+          <h3>Count your bills</h3>
+        </div>
+        <div id="options">
+          <ul>
+          <li id="reset"><button type="reset" value="reset">Reset</button></li>
+          <!-- <li id="save"><button type="button">Save</button></li> -->
+          </ul>
+        </div>
+        <section id="cashCalculator">
+          <div>
+            <h4>Cash Calculator</h4>
+          </div>
+          <div id="counters">
+            <div class="box" id="bill100">
+              <input type="text" name="hundred" id="hundred" maxlength="5" placeholder="0" size="6">
+              <p class="currency">x $100</p>
+              <output class="outbox" id="totalHundreds"  name="totalHundreds">$0.00</ouput>
+            </div>
+            <div class="box" id="bill50">
+              <input type="text" name="fifties" id="fifties" maxlength="5" placeholder="0" size="6">
+              <p class="currency">x $50</p>
+              <output name="totalFifties">$0.00</output>
+            </div>
+            <div class="box" id="bill20">
+              <input type="text" name="dubs" id="dubs" placeholder="0" maxlength="5" size="6">
+              <p class="currency">x $20</p>
+              <output name="totalDubs">$0.00</output>
+            </div>
+            <div class="box" id="bill10">
+              <input type="text" name="tens" id="tens" placeholder="0" size="6"maxlength="5" >
+              <p class="currency">x $10</p>
+              <output name="totalTenss">$0.00</output>
+            </div>
+            <div class="box" id="bill05">
+              <input type="text" name="fives" id="fives" placeholder="0" size="6"maxlength="5" >
+              <p class="currency">x $5</p>
+              <output name="totalFives">$0.00</output>
+            </div>
+            <div class="box" id="bill01">
+              <input type="text" name="singles" id="singles" placeholder="0" size="6"maxlength="5" >
+              <p class="currency">x $1</p>
+              <output name="totalSingles"> $0.00</output>
+            </div>
+            <div class="box" id="coin25">
+              <input type="text" name="quaters" id="quaters" placeholder="0" size="6"maxlength="5" >
+              <p class="currency">x $0.25</p>
+              <output name="totalQuaters">$0.00</output>
+            </div>
+            <div class="box" id="coin10">
+              <input type="text" name="dimes" id="dimes" placeholder="0" size="6"maxlength="5" >
+              <p class="currency">x $0.10</p>
+              <output name="totalDimes">$0.00</output>
+            </div>
+            <div class="box" id="coin05">
+              <input type="text" name="nickles" id="nickles" placeholder="0" size="6"maxlength="5" >
+              <p class="currency">x $0.05</p>
+              <output name="totalNickles">$0.00</output>
+            </div>
+            <div class="box" id="coin01">
+              <input type="text" name="pennies" id="pennies" placeholder="0" size="6"maxlength="5" >
+              <p class="currency">x $0.01</p>
+              <output name="totalPennies">$0.00</output>
+            </div>
+            <div class="box" id="total">
+              <p class="currency">Total Amount</p><hr>
+              <output id="totalTotalTotal"name="totalTotal">$0.00</output>
+          </div>
+        </section>
+        </div>
+
+      </div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+#container {
+  background: #ccc;
+  border: 2px solid black;
+  size: cover;
+
+
+}
+#title {
+   background: black;
+   border-bottom: .5px solid darkgray;
+   color: white;
+   margin: 0;
+   padding: 5px;
+   font-size: 10px;
+   text-align: center;
+}
+
+#options {
+  min-height: 35px;
+  padding: 5px 0px;
+  margin-bottom: 5px;
+  background: gray;
+  border-bottom:  .5px solid white;
+
+}
+#options ul li{
+  min-width: 0 auto;
+  list-style:  none;
+  padding: 2px 10px;
+}
+
+#reset{
+  float: left;
+}
+
+
+#cashCalculator{
+  padding: 0 2.5%;
+  background: #ccc;
+}
+
+#cashCalculator h4{
+  font-size: 12px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#counters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+#counters output{
+  background: gray;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+            inset 5px 5px 8px rgba(0,0,0,0.5);
+  border: .5px solid white;
+  border-radius: 5px;
+  padding: 8px 7px;
+  margin: 2px;
+  font-size: 12px;
+}
+
+
+.box{
+  background: blue;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: 3% 1.5%;
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 100px;
+  height: 120px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 4px 4px 4px rgba(0,0,0,.8);
+  justify-self: center;
+}
+
+input{
+  /*width: 65px;*/
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+            inset 5px 5px 8px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+/*input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+//Supports Mozilla
+input[type=number] {
+  -moz-appearance:textfield;
+}*/
+output{
+  max-w
+}
+
+#counters p{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+#total{
+  /*margin-left: 8%;*/
+  width: 125px;
+  border-color: green;
+  grid-column: span 2;
+}
+#total p{
+  margin: 0px 5px 8px 5px;
+}
+hr{
+  padding-bottom: 2px;
+  background:white;
+  margin-bottom: 25px;
+}
+#bill100{
+  /*display: grid;*/
+  grid-template-rows:  repeat(10px);
+}
+/*#bill100 input{
+  grid-column: 5px;;
+}*/
