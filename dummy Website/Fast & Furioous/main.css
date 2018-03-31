@@ -115,7 +115,7 @@ nav{
   nav ul{
     display: flex!important;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: cfenter;
     background: rgba(13, 19, 23, 0.8);
   }
   nav ul a {
@@ -279,7 +279,7 @@ nav{
     border-radius: 30px;
 
   }
-  .about-bard p{
+  .about-card p{
     max-width: 70%;
     margin: 0 auto;
   }

@@ -1,0 +1,214 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'IBM Plex Serif', serif;
+  background:  #f5f3f5;
+}
+
+nav ul{
+  list-style: none;
+  overflow: hidden;
+  display: none;
+}
+
+nav ul a{
+  display: block;
+  background: #11999e;
+  padding: 20px;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: yellow;
+  border-bottom: 1px solid #e4f9f5;
+  outline: none;
+  text-align: center;
+  transition: color 1s ease, background 1s ease, transform 1s ease;
+}
+nav ul a:hover{
+  background: #12776f;
+  color: #e0e0ce;
+  transform: scale(1.3);
+  border-top: 1px solid #e4f9f5;
+}
+.nav-container h1{
+  width: 200px;
+  text-align: center;
+  color: #e4f9f5;
+}
+.nav-container{
+  padding: 0 20px;
+  background: #12776f;
+  border-bottom: 3px solid #40514e;
+  display: flex;
+  justify-content: space-between;
+}
+.bar{
+  width: 30px;
+  height: 3px;
+  margin: 7px;
+  background: #40514e
+}
+.btn {
+  padding: 2px;
+  display: inline-block;
+  border: 2px solid #40514e;
+  align-self: center;
+  cursor: pointer;
+}
+
+header{
+  min-height: 100vh;
+  background: url("images/front.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+nav{
+  flex: 0 0 auto;
+}
+.banner{
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.banner-center{
+  margin: 0 auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3));
+  border-radius: 2%;
+}
+.banner h1{
+  font-size: 4em;
+  text-transform: uppercase;
+  color: #e4f9f5;
+}
+.yellow{
+  color: yellow;
+}
+.banner h2{
+  text-transform: capitalize;
+  font-size: 2em;
+  padding-bottom: 5px;
+  color: #30e3ca;
+}
+.banner h3{
+  text-transform: capitalize;
+  font-size: 1em;
+  color: #e4f9f5;
+  margin: 0 20px;
+}
+.banner-icons{
+  padding: 20px;
+}
+.banner-icons a{
+  display: inline-block;
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 50%;
+  color: #e4f9f5;
+  transition: color 1s ease, transform .5s ease;
+}
+.banner-icons a:hover{
+  color: yellow;
+  transform: translateY(-10px);
+}
+nav{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+@media screen and (min-width:776px) {
+  .nav-container{
+    display: none;
+  }
+  nav ul{
+    display: flex!important;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(13, 19, 23, 0.3);
+  }
+  nav ul a{
+    background: transparent;
+    color: #e4f9f5;
+    transition: color 1s ease,background 1s ease,padding 1s ease;
+  }
+  nav ul a:focus,
+  nav ul a:hover{
+    background: transparent;
+    color: yellow;
+
+  }
+}
+
+/*######################about us###################*/
+
+.about{
+  background: #f5f3f5;
+  text-align: center;
+  margin: 25px 0 15px 0;
+}
+.about-back{
+  min-height: 100vh;
+  padding: 100px 0;
+  background: url("images/playground.jpg")center/cover
+  no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-card{
+  align-self: center;
+  display: flex;
+  text-align: center;
+  margin: 40px;
+  flex-direction: column;
+  border-radius: 30px;
+  min-width: 300px;
+  max-width: 50%;
+  background: rgba(200, 200, 200, 0.8);
+}
+.title h2{
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #12776f;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.about-card h3{
+  color: #12776f;
+  text-transform: capitalize;
+  padding: 15px 0;
+}
+.about-card p{
+  color: #40514e;
+}
+.about-underline{
+  background: yellow;
+  width: 100px;
+  height: 4px;
+  margin: 0 auto 15px auto;
+}
+iframe{
+  width:100%;
+  border-radius: 5px;
+}
+@media screen and (min-width:776px) {
+  .about-card {
+    max-width: 50%;
+    border-radius: 30px;
+  }
+  .about-card p{
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+}
