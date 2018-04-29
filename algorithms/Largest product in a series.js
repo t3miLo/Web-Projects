@@ -2,7 +2,7 @@ let series = "773167176531330624919225119674426574742355349194934969835203127745
 
 function getFactor(a, b){
   return a * b;
-};
+}
 
 var seriesSplit = [];
 let highestSum = 0
@@ -17,7 +17,7 @@ for (let i = 0; i < series.length; i++){
       highestSum = sum;
       console.log(splitter);
       console.log(highestSum);
-    }else{
-    }
+    } 
+   
   }
 };

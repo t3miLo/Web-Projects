@@ -32,10 +32,10 @@ for (var i = 0; i < matrix.length; i++){
       let numbs = console.log("4 bot = " + matrix[i][ii], matrix[i+1][ii], matrix[i+2][ii], matrix[i+3][ii]);
       let botProduct = matrix[i][ii] * matrix[i+1][ii] * matrix[i+2][ii] * matrix[i+3][ii];
       console.log(botProduct);
-    };
-  };
-};
-
+    }
+  }
+}
+console.logg("lost")
 // for (var i = 0; i < matrix.length; i++){
 //   for (var ii = 0; ii < matrix[i].length; ii++){
 //       if(matrix[i].indexOf(matrix[i][ii]) <= matrix[i].indexOf(matrix[i][16])){

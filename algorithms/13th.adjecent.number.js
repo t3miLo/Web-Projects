@@ -11,8 +11,6 @@ for (var i = 0; i < test.length-2; i++){
   arr.push(mtest);
 }
 console.log(arr);
-
-
 // mtest = test.split("");
 // console.log(mtest = mtest.reduce(function (a,b){
 //   return a * b;

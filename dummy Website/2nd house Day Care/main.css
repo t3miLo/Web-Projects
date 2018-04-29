@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body{
   font-family: 'IBM Plex Serif', serif;
@@ -15,13 +16,13 @@ nav ul{
 
 nav ul a{
   display: block;
-  background: #11999e;
+  background: #6683D5;
   padding: 20px;
   font-size: 1em;
   text-decoration: none;
   text-transform: uppercase;
   color: yellow;
-  border-bottom: 1px solid #e4f9f5;
+  border-bottom: 1px solid yellow;
   outline: none;
   text-align: center;
   transition: color 1s ease, background 1s ease, transform 1s ease;
@@ -39,7 +40,7 @@ nav ul a:hover{
 }
 .nav-container{
   padding: 0 20px;
-  background: #12776f;
+  background: #6683D5;
   border-bottom: 3px solid #40514e;
   display: flex;
   justify-content: space-between;
@@ -162,6 +163,7 @@ nav{
   background: url("images/playground.jpg")center/cover
   no-repeat fixed;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -178,6 +180,7 @@ nav{
 }
 .title h2{
   font-size: 2em;
+  font-weight: 600;
   text-transform: uppercase;
   color: #12776f;
   padding-top: 30px;
@@ -191,15 +194,16 @@ nav{
 .about-card p{
   color: #40514e;
 }
-.about-underline{
+.title-underline{
   background: yellow;
   width: 100px;
   height: 4px;
   margin: 0 auto 15px auto;
 }
 iframe{
-  width:100%;
-  border-radius: 5px;
+  max-width: 50%;
+  min-width: 300px;
+  border-radius: 30px;
 }
 @media screen and (min-width:776px) {
   .about-card {
@@ -210,5 +214,79 @@ iframe{
     max-width: 70%;
     margin: 0 auto;
   }
+  iframe{
+    max-width: 75%;
+  }
 
+}
+/*###################---Programs---#################*/
+.programs{
+  background: #f5f3f5;
+  text-align: center;
+  margin: 35px 0 15px 0;
+}
+.prog-card{
+  min-height: 100vh;
+  padding: 100px 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.progs img{
+  width: 80%;
+  margin: 10px;
+  border: 1px solid #000;
+  box-shadow: 10px 10px 22px .5px rgba(0,0,0);
+}
+.progs h3{
+  font-size: 1.5em;
+  text-transform: capitalize;
+  padding-top: 20px;
+  width: 85%;
+  margin: 0 auto;
+
+
+}
+
+.progs p{
+  margin: 15px;
+  text-align: center;
+}
+.end-underline{
+  background: #000;
+  height: 5px;
+  width: 100px;
+  margin: 0 auto;
+}
+@media screen and (min-width:776px) {
+  .prog-card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 20px;
+    align-items: stretch;
+
+  }
+  /*.progs{
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }*/
+  .progs img{
+    border-radius: 3%;
+  }
+
+}
+/*############### Foooter #######################*/
+.foot {
+  background: #6683D5;
+  text-align: center;
+  padding: 8px;
+}
+.foot h5{
+}
+.foot p{
+  font-size: 10px;
+}
+.foot h6{
+  padding-top: 2px;
 }
